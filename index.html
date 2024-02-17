@@ -67,7 +67,7 @@
   <div id="particles-js"></div>
 <nav class="p-4 flex flex-wrap items-center justify-between w-full px-2 md:px-4">
     <div>
-      <span class="text-black font-bold">Yamin Li's personal website</span><span class="text-black"></span>
+      <span class="text-black font-bold">Welcome to Yamin Li's personal website</span><span class="text-black"></span>
     </div>
     <button id="dark-mode-toggle" class="ml-4 p-2  text-black rounded shadow-md">🌓</button>
   </nav>
@@ -220,10 +220,16 @@ footerContent.appendChild(copyright);
 
 const madeWith = document.createElement("div");
 madeWith.className = "hidden md:flex";
+const link = document.createElement("a");
+link.href = "https://github.com/tobwil/markdown_website/"; // Replace with the actual URL
+link.textContent = "Template by Tobias Wilhelm";
+
+madeWith.appendChild(link);
+footerContent.appendChild(madeWith);
+const madeWith = document.createElement("div");
+madeWith.className = "hidden md:flex";
 madeWith.innerHTML = 'MIT licence';
 footerContent.appendChild(madeWith);
-
-footerContent.appendChild(elevatorBtnDiv);
 document.body.appendChild(footer);
   </script>
  
