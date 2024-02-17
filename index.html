@@ -218,18 +218,18 @@ copyright.className = "hidden md:flex";
 copyright.innerHTML = '&nbsp;&nbsp;&copy; ' + (new Date().getFullYear()) + ' Yamin Li (Jasmine)';
 footerContent.appendChild(copyright);
 
-const madeWith = document.createElement("div");
-madeWith.className = "hidden md:flex";
+const template= document.createElement("div");
+template.className = "hidden md:flex";
 const link = document.createElement("a");
 link.href = "https://github.com/tobwil/markdown_website/"; // Replace with the actual URL
 link.textContent = "Template by Tobias Wilhelm";
+template.appendChild(link);
+footerContent.appendChild(template);
 
-madeWith.appendChild(link);
-footerContent.appendChild(madeWith);
-const madeWith = document.createElement("div");
-madeWith.className = "hidden md:flex";
-madeWith.innerHTML = 'MIT licence';
-footerContent.appendChild(madeWith);
+const license = document.createElement("div");
+license.className = "hidden md:flex";
+license.innerHTML = 'MIT licence';
+footerContent.appendChild(license);
 document.body.appendChild(footer);
   </script>
  
